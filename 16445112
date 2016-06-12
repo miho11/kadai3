@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#引数確認
+if [ -z $1 -o -z $2 ]; then
+  echo "引数を正しく入力してください"
+  exit
+else
+  declare -i value1=$1
+  declare -i value2=$2
+fi
+
+#最大公約数を求める
+while :
+do
+  if [ $value1 -gt $value2 ]; then
+    value1=`expr $value1-$value2`
+  elif [ $value1 -lt $value2 ]; then
+    value2=`expr $value2-$value1`
+  else
+    echo "$value1"
+    break
+  fi
+done
+
