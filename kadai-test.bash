@@ -2,11 +2,11 @@
 
 tmp=/tmp/$$
 
-ERROR_EXIT () {
-  echo "$1" > &2
-  rm -f $tmp-*
-  exit 1
-}
+#ERROR_EXIT () {
+#  echo "$1" > &2
+#  rm -f $tmp-*
+#  exit 1
+#}
 
 #TEST1
 echo "test"
