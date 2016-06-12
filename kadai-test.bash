@@ -23,7 +23,7 @@ rm -f $tmp-*
 #TEST3
 echo 100 > $tmp-ans
 ./16445112 100 100 > $tmp-out || ERROR_EXIT "TEST3-BASH"
-diff $tmp-ans $tmo-out || ERROR_EXIT "TEST3-DIFF"
+diff $tmp-ans $tmp-out || ERROR_EXIT "TEST3-DIFF"
 rm -f $tmp-*
 
 #TEST4
