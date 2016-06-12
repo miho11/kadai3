@@ -9,7 +9,7 @@ tmp=/tmp/$$
 #}
 
 #TEST1
-echo "test"
+./16445112 10 5
 
 #TEST END
 exit 0
